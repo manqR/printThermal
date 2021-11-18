@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:id="@+id/title_paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices"
+        android:visibility="gone"
+        android:background="@color/design_default_color_on_primary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:paddingLeft="5dp"
+        />
+    <!--        android:background="#666"
+        android:textColor="#fff"-->
+
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="true"
+        android:stackFromBottom="false" />
+
+    <TextView android:id="@+id/title_new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Device lainnya"
+        android:visibility="gone"
+        android:background="@color/design_default_color_on_primary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:paddingLeft="5dp"
+        />
+    <!--        android:background="#666"
+        android:textColor="#fff"-->
+
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight="2"
+        android:stackFromBottom="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_batal_scan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/teal_700"
+            android:text="Batal Print"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/teal_200"
+            android:text="Scan Bluetooth"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
